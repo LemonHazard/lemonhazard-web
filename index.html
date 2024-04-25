@@ -1,0 +1,457 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport">
+  <link rel="icon" sizes="64x64" href="/lemon_hazard_icon.png" type="image/png">
+  <link rel="shortcut icon" href="/lemon_hazard_icon.png" type="image/png">
+  <title>Lemon Hazard</title>
+  <style>
+    @font-face {
+      font-family: Roboto;
+      src:
+        url('Roboto-Regular.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: Roboto-Condensed;
+      src:
+        url('Roboto-Condensed.ttf') format('truetype');
+    }
+
+    :root {
+      --wave-size-ratio: 15.421686747;
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+
+    ul>li {
+      line-height: 1.5rem;
+    }
+
+    .mockup-phone {
+      display: inline-block;
+      border: 4px solid #444;
+      border-radius: 50px;
+      background-color: #000;
+      padding: 10px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .mockup-phone .camera {
+      position: relative;
+      top: 0;
+      left: 0;
+      background: #000;
+      height: 25px;
+      width: 150px;
+      margin: 0 auto;
+      border-bottom-left-radius: 17px;
+      border-bottom-right-radius: 17px;
+      z-index: 11;
+    }
+
+    .mockup-phone .display {
+      overflow: hidden;
+      border-radius: 40px;
+      margin-top: -25px;
+      position: relative;
+    }
+
+    .bubble-strike-wrapper {
+      flex-direction: row;
+      padding: 4rem 4rem 8rem 4rem;
+    }
+
+    .bubble-strike-info {
+      padding: 0 4rem 0 4rem;
+    }
+
+    .bubble-strike-icon {
+      width: 64px;
+      height: 64px;
+    }
+
+    .bubble-strike-title {
+      font-size: 4rem;
+    }
+
+    .bubble-strike-desc {
+      font-size: 1.2rem;
+    }
+
+    .action-call-wrapper {
+      margin-top: calc(-8rem + (100vw / var(--wave-size-ratio) * 0.65));
+    }
+
+    .action-call-text {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    .action-call-icon {
+      width: 4rem;
+      height: 4rem;
+      margin: 1rem 0;
+    }
+
+    .section-wrapper {
+      margin-top: 3rem;
+      padding-bottom: 7rem;
+    }
+
+    .social-icon-wrapper {
+      display: grid;
+      grid-template-columns: repeat(6, 4rem);
+      gap: 2rem 2rem;
+      margin-top: 1rem;
+      justify-items: center;
+    }
+
+    .slogan-text {
+      padding: 3rem 1rem 2rem 1rem;
+    }
+
+    .social-icon {
+      display: flex;
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .google-play-link {
+      margin-left: -20px;
+    }
+
+    @media (max-width: 1824px) {
+      .bubble-strike-wrapper {
+        flex-direction: row;
+        padding: 4rem 0rem 8rem 0rem;
+      }
+
+      .action-call-wrapper {
+        margin-top: calc(-6.25rem + (100vw / var(--wave-size-ratio) * 0.65));
+      }
+
+      .action-call-text {
+        font-size: 1.75rem;
+      }
+
+      .action-call-icon {
+        width: 3rem;
+        height: 3rem;
+        margin: 0.75rem 0;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .bubble-strike-wrapper {
+        flex-direction: column;
+        padding: 3rem 0rem 6rem 0rem;
+        align-items: center;
+      }
+
+      .bubble-strike-info {
+        padding: 0 1rem 3rem 1rem;
+      }
+
+      .bubble-strike-icon {
+        width: 48px;
+        height: 48px;
+      }
+
+      .bubble-strike-title {
+        font-size: 3rem;
+      }
+
+      .bubble-strike-desc {
+        font-size: 1rem;
+      }
+
+      .store-button-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+
+      .action-call-wrapper {
+        margin-top: calc(-6rem + (100vw / var(--wave-size-ratio) * 0.65));
+      }
+
+      .action-call-text {
+        font-size: 1.5rem;
+      }
+
+      .action-call-icon {
+        width: 3rem;
+        height: 3rem;
+        margin: 0.75rem 0;
+      }
+
+      .section-wrapper {
+        margin-top: 7rem;
+        padding-bottom: 9rem;
+      }
+
+      .social-icon-wrapper {
+        margin-top: 2rem;
+        grid-template-columns: repeat(3, 4rem);
+        grid-auto-rows: 4rem;
+      }
+
+      .slogan-text {
+        padding: 2rem 1rem 2rem 1rem;
+      }
+
+      .google-play-link {
+        margin-left: 0px;
+      }
+    }
+  </style>
+</head>
+
+<body style="margin: 0;">
+  <header
+    style="background-color: rgba(20, 16, 11, 0.9); width: 100%; height: 4rem; display: flex; justify-content: center; align-items: center;">
+    <div style="display: flex; align-items: center; padding: 0 1rem; width: 100%; max-width: 70rem;">
+      <img src="/lemon_hazard_logo.png" style="width: 3rem; height: 3rem;" />
+      <span style="width: 1rem;"></span>
+      <span style="color: white; font-size: 1.5rem; font-weight: 700; font-family: Roboto-Condensed, sans-serif">
+        <span style="color: #FBD50B;">LEMON</span> <span style="color: rgb(245, 245, 244);">HAZARD</span>
+      </span>
+    </div>
+  </header>
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <span class="slogan-text"
+      style="color: rgba(20, 16, 11, 0.9); text-align: center; font-family: Roboto, sans-serif; font-size: 1.5rem; line-height: 2rem; font-weight: 600;">
+      <nobr>A video game development studio.</nobr>
+      <nobr>We like games as much as you do</nobr>
+      <nobr>🍋❤️🎮</nobr>
+    </span>
+  </div>
+  <div class="section-wrapper"
+    style="display: flex; flex-direction: column; align-items: center; background-image: linear-gradient(180deg, #80808016 0%, #ffffff00 100%); background-repeat: no-repeat;">
+    <div class="action-call-wrapper"
+      style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: absolute;">
+      <div>
+        <span class="action-call-text"
+          style="color: rgba(20, 16, 11, 0.9); font-family: Roboto-Condensed, sans-serif; font-weight: 700;">
+          Follow Us Here
+        </span>
+      </div>
+      <div class="action-call-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 5L12.7071 11.2929C12.3166 11.6834 11.6834 11.6834 11.2929 11.2929L5 5" stroke="#FBD50B"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M19 13L12.7071 19.2929C12.3166 19.6834 11.6834 19.6834 11.2929 19.2929L5 13" stroke="#FBD50B"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <rect width="22" height="22" x="1" y="1" rx="5" ry="5" stroke="#FBD50B" stroke-width="1"></rect>
+        </svg>
+      </div>
+    </div>
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px" y="0px" viewBox="0 0 1280 83" style="enable-background:new 0 0 1280 83;" xml:space="preserve">
+      <path fill="#ffffff" d="M161.2,76.7c107.3-12.9,171.4-28.3,273.6-28.8c106.1-0.4,208.4,24.4,340.1,14C907.3,51.4,1003.8,0,1280,0H0
+    v80.8C23,82.7,82.9,86,161.2,76.7z" />
+    </svg>
+    <div class="social-icon-wrapper">
+      <a class="social-icon" href="https://twitter.com/lemon_hazard">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <g>
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+            </path>
+          </g>
+        </svg>
+      </a>
+      <a class="social-icon" href="https://www.twitch.tv/lemon_hazard">
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#000000" class="bi bi-twitch">
+          <path
+            d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z" />
+          <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z" />
+        </svg>
+      </a>
+      <a class="social-icon" href="https://www.youtube.com/@LemonHazard">
+        <svg viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)" fill="#000000">
+              <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path
+                  d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289"
+                  id="youtube-[#168]">
+                </path>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </a>
+      <a class="social-icon" href="https://www.instagram.com/lemonhzrd">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+            fill="#0F0F0F" />
+          <path
+            d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+            fill="#0F0F0F" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+            fill="#0F0F0F" />
+        </svg>
+      </a>
+      <a class="social-icon" href="https://www.patreon.com/LemonHazard">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436 476">
+          <path data-fill="1"
+            d="M436 143c-.084-60.778-47.57-110.591-103.285-128.565C263.528-7.884 172.279-4.649 106.214 26.424 26.142 64.089.988 146.596.051 228.883c-.77 67.653 6.004 245.841 106.83 247.11 74.917.948 86.072-95.279 120.737-141.623 24.662-32.972 56.417-42.285 95.507-51.929C390.309 265.865 436.097 213.011 436 143Z">
+          </path>
+        </svg>
+      </a>
+      <a class="social-icon" href="https://discord.gg/uGy3QEjz">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36">
+          <g id="图层_2" data-name="图层 2">
+            <g id="Discord_Logos" data-name="Discord Logos">
+              <g id="Discord_Logo_-_Large_-_White" data-name="Discord Logo - Large - White">
+                <path
+                  d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div
+    style="display: flex; flex-direction: column; align-items: center; background-image: linear-gradient(180deg, #fbd70b4d 0%, #ffffff00 100%); background-repeat: no-repeat;">
+    <div class="action-call-wrapper"
+      style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: absolute;">
+      <div>
+        <span class="action-call-text"
+          style="color: rgba(20, 16, 11, 0.9); font-family: Roboto-Condensed, sans-serif; font-weight: 700;">
+          Play Our Games
+        </span>
+      </div>
+      <div class="action-call-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 5L12.7071 11.2929C12.3166 11.6834 11.6834 11.6834 11.2929 11.2929L5 5" stroke="#FBD50B"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M19 13L12.7071 19.2929C12.3166 19.6834 11.6834 19.6834 11.2929 19.2929L5 13" stroke="#FBD50B"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <rect width="22" height="22" x="1" y="1" rx="5" ry="5" stroke="#FBD50B" stroke-width="1"></rect>
+        </svg>
+      </div>
+    </div>
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px" y="0px" viewBox="0 0 1280 83" style="enable-background:new 0 0 1280 83;" xml:space="preserve">
+      <path fill="#ffffff" d="M161.2,76.7c107.3-12.9,171.4-28.3,273.6-28.8c106.1-0.4,208.4,24.4,340.1,14C907.3,51.4,1003.8,0,1280,0H0
+    v80.8C23,82.7,82.9,86,161.2,76.7z" />
+    </svg>
+    <div class="bubble-strike-wrapper" style="display: flex; justify-content: center; width: 100%; max-width: 80rem;">
+      <div class="bubble-strike-info"
+        style="display: flex; flex-direction: column; justify-content: space-between; max-width: 34rem;">
+        <span style="color: rgba(20, 16, 11, 0.9); font-family: Roboto-Condensed, sans-serif">
+          <div style="display: flex; margin-bottom: 1rem;">
+            <img src="/bubble_strike_icon.png" class="bubble-strike-icon"
+              style="margin-right: 1rem; border-radius: 10px;" />
+            <span class="bubble-strike-title" style="font-weight: 700;">
+              Bubble Strike
+            </span>
+          </div>
+          <span class="bubble-strike-desc" style="font-weight: 500; font-family: Roboto, sans-serif">
+            It's a unique and new puzzle game! Experience the charm of bubble strike as you become a skilled bubble
+            puzzle player!
+            <ul>
+              <li>
+                <span style="vertical-align: middle;">
+                  <svg fill="#000000" width="1rem" height="1rem" viewBox="0 0 1920 1920"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1771.731 291.037C1675.709 193.659 1547.944 140 1411.818 140h-.113c-136.125 0-263.777 53.66-359.573 150.924-37.618 38.07-68.571 80.997-92.294 127.426-23.61-46.429-54.563-89.356-92.068-127.313C771.86 193.659 644.208 140 507.97 140h-.113c-136.012 0-263.777 53.66-359.8 151.037-197.691 200.629-197.691 527.103 1.695 729.088l810.086 760.154 811.893-761.736c197.692-200.403 197.692-526.877 0-727.506"
+                      fill-rule="evenodd" />
+                  </svg>
+                </span>
+                &nbsp;21 unique & advanced levels
+              </li>
+              <li>
+                <span style="vertical-align: middle;">
+                  <svg fill="#000000" width="1rem" height="1rem" viewBox="0 0 1920 1920"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1771.731 291.037C1675.709 193.659 1547.944 140 1411.818 140h-.113c-136.125 0-263.777 53.66-359.573 150.924-37.618 38.07-68.571 80.997-92.294 127.426-23.61-46.429-54.563-89.356-92.068-127.313C771.86 193.659 644.208 140 507.97 140h-.113c-136.012 0-263.777 53.66-359.8 151.037-197.691 200.629-197.691 527.103 1.695 729.088l810.086 760.154 811.893-761.736c197.692-200.403 197.692-526.877 0-727.506"
+                      fill-rule="evenodd" />
+                  </svg>
+                </span>
+                &nbsp;Simple and addictive gameplay
+              </li>
+              <li>
+                <span style="vertical-align: middle;">
+                  <svg fill="#000000" width="1rem" height="1rem" viewBox="0 0 1920 1920"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1771.731 291.037C1675.709 193.659 1547.944 140 1411.818 140h-.113c-136.125 0-263.777 53.66-359.573 150.924-37.618 38.07-68.571 80.997-92.294 127.426-23.61-46.429-54.563-89.356-92.068-127.313C771.86 193.659 644.208 140 507.97 140h-.113c-136.012 0-263.777 53.66-359.8 151.037-197.691 200.629-197.691 527.103 1.695 729.088l810.086 760.154 811.893-761.736c197.692-200.403 197.692-526.877 0-727.506"
+                      fill-rule="evenodd" />
+                  </svg>
+                </span>
+                &nbsp;Default night mode to protect your eyes
+              </li>
+              <li>
+                <span style="vertical-align: middle;">
+                  <svg fill="#000000" width="1rem" height="1rem" viewBox="0 0 1920 1920"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1771.731 291.037C1675.709 193.659 1547.944 140 1411.818 140h-.113c-136.125 0-263.777 53.66-359.573 150.924-37.618 38.07-68.571 80.997-92.294 127.426-23.61-46.429-54.563-89.356-92.068-127.313C771.86 193.659 644.208 140 507.97 140h-.113c-136.012 0-263.777 53.66-359.8 151.037-197.691 200.629-197.691 527.103 1.695 729.088l810.086 760.154 811.893-761.736c197.692-200.403 197.692-526.877 0-727.506"
+                      fill-rule="evenodd" />
+                  </svg>
+                </span>
+                &nbsp;New levels are constantly being added
+              </li>
+              <li>
+                <span style="vertical-align: middle;">
+                  <svg fill="#000000" width="1rem" height="1rem" viewBox="0 0 1920 1920"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1771.731 291.037C1675.709 193.659 1547.944 140 1411.818 140h-.113c-136.125 0-263.777 53.66-359.573 150.924-37.618 38.07-68.571 80.997-92.294 127.426-23.61-46.429-54.563-89.356-92.068-127.313C771.86 193.659 644.208 140 507.97 140h-.113c-136.012 0-263.777 53.66-359.8 151.037-197.691 200.629-197.691 527.103 1.695 729.088l810.086 760.154 811.893-761.736c197.692-200.403 197.692-526.877 0-727.506"
+                      fill-rule="evenodd" />
+                  </svg>
+                </span>
+                &nbsp;It's free!
+              </li>
+            </ul>
+          </span>
+          <br />
+          <div class="store-button-wrapper">
+            <a class="google-play-link"
+              href="https://play.google.com/store/apps/details?id=com.bubblestrike&amp;pcampaignid=web_share">
+              <img style="width: 20rem;" alt="Get it on Google Play"
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
+            </a>
+          </div>
+      </div>
+      <div style="display: flex;">
+        <div class="mockup-phone">
+          <div class="camera"></div>
+          <div class="display">
+            <div
+              style="background-color: #1f1f1f; height: 25px; position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
+            </div>
+            <video preload="auto" autoplay muted="" poster="/bubble_strike_poster.jpg" tabindex="-1" loop=""
+              style="max-width: 40rem; max-height: 40rem;">
+              <source src="/bubble_strike_trailer.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer
+    style="background-color: rgba(20, 16, 11, 0.9); height: 6rem; display: flex; justify-content: center; align-items: center;">
+    <span style="color: rgba(245, 245, 244, 0.9); font-family: Roboto, sans-serif; font-size: 0.9rem;">
+      Copyright © 2024 Lemon Hazard. All rights reserved.
+    </span>
+  </footer>
+</body>
+
+</html>
